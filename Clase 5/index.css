@@ -1,0 +1,38 @@
+*{
+    background-color: bisque;
+}
+h1,h2{
+    color: rgb(25, 182, 182);
+    font-size: 50px;
+}
+p{
+    color: red;
+    font-size: 25px;
+}
+#first{
+    color: yellowgreen;
+}
+
+.presentation{
+    color: violet;
+    font-size: 15px;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: red;
+}
+div{
+    border:solid black;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 50px;
+    font-size: 50px;
+}
+section{
+    border: solid black;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 400px;
+    
+}

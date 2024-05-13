@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin:0px;}
+    body{
+        background-color: hsl(217, 54%, 11%);
+        width: 100%;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    
+    }
+    .divpadre{
+        border:solid rgb(201, 220, 238);
+        width: 28%;
+        border-radius: 25px;
+        padding: 10px;
+        width: 300px;
+        height:530px ;
+        background-color:hsl(216, 50%, 16%);;
+        border:1px; 
+    }
+
+     .imagen{
+        width: 100%;
+        border-radius: 25px;
+        text-align: center;
+        margin:left;
+    }
+    .titulotexto{
+        margin-bottom: 25px;
+        margin-left: 20px;
+        color: white;
+        padding: 2px;
+         border-bottom:solid whitesmoke 1px;
+         
+      
+    }
+    .parrafotexto{  color: hsl(215, 51%, 70%);
+        margin-bottom: 20px;
+        margin-right:5px ;}
+        
+     
+    .contenedordeimagenes{
+        display: flex;
+        justify-content: space-between;
+    
+      
+
+
+        
+    }
+    .contenedoravatar{
+        white-space: nowrap;
+      display: flex;
+      width:100% ;
+      align-items: center;
+      justify-content: space-between;
+    border-top-color:1px red ;
+    }
+   
+    
+   .imagenavatar{
+    border:solid white ; 
+    display: flex;
+    margin-right:15px;
+  }
+  .ultimotexto{
+   margin-right:18px;
+    display:flex;
+    width: 25%;
+  
+
+  }
+  .ultimotexto2{display: flex;
+    margin-right:95px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: blueviolet;
+
+  }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+    .image-container{
+       
+       border-radius: 30px;
+       
+    
+        
+    }
+    
+    .flexcenter{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .divtexto{
+        
+        font-family:"Outfit", sans-serif;
+        font-size:11px;
+         padding:25px ;
+         margin: auto;
+        
+    }
+    img{
+        width:295px;
+        height:295px;
+        border-radius:30px;
+        margin:0px;
+        
+    }
+    
+    h1{
+        color: darkblue;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    p{color:lightgray;
+        margin-top:10px ;
+        margin-bottom:15px;
+    }
+    

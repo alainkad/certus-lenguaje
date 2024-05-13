@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+    }
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px  1fr;
+        border: solid red;
+        grid-gap: 5px;
+        font-family: sans-serif;
+        grid-template-areas: 
+        "c1 c1 c1 c1"
+        "c2 c3 c4 c5"
+        "c2 c6 c6 c7"
+        "c2 c6 c6 c8";
+    }
+    .main-container div:nth-child(1){
+        border: solid blue;
+        font-weight: bold;
+        /*grid-column: 1/5 ;
+        grid-row: 1/2;*/
+        grid-area: c1;
+    }
+    .main-container div:nth-child(2){
+        border: solid blueviolet;
+        /*grid-column: 1/2;
+        grid-row: 2/5;*/
+        grid-area: c2;
+    }
+    .main-container div:nth-child(3){
+        border: solid green;
+        /*grid-column: 2/3;
+        grid-row: 2/3;*/
+        grid-area: c3;
+    }
+    .main-container div:nth-child(4){
+        border: solid greenyellow;
+        grid-area: c4;
+        /*grid-column: 3/4;
+        grid-row: 2/3;*/
+        
+    }
+    .main-container div:nth-child(5){
+        border: solid rgb(241, 17, 230);
+        /*grid-column: 4/5;
+        grid-row: 2/3;*/
+        grid-area: c5;
+    }
+    .main-container div:nth-child(6){
+        border: solid red;
+        /*grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;*/
+        grid-area: c6;
+    }
+    .main-container div:nth-child(7){
+        border: solid red;
+        /*grid-column: 4/5;
+        grid-row: 3/4;*/
+        grid-area: c7;
+    } 
+    .main-container div:nth-child(8){
+        border: solid red;
+        /*grid-column-start: 4/5 ;
+        grid-column-end: 4/5 ;*/
+        grid-area: c8;
+    }
+    @media(max-width: 768px){
+        .main-container{
+            background-color: aqua;
+            grid-template-columns: 2fr;
+            grid-template-rows: repeat(8,200px);
+            grid-template-areas: initial;
+        }
+        .main-container div{
+            grid-area: initial !important;
+        }
+    }
+</style>
+<body>
+    <main class="main-container">
+      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad distinctio facere ea eveniet quas numquam earum repellat laboriosam dignissimos doloremque tenetur consectetur, cum veritatis dicta, architecto quaerat minima quod tempora!</div>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum architecto officiis possimus fugit modi quaerat, repellendus velit dolor doloremque iure reiciendis sint dolore rerum quod amet saepe distinctio nostrum? Hic.</div>
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus iure officia nostrum consequatur nisi totam maiores molestiae ipsam laborum similique ratione iste voluptates porro vero perspiciatis illo, quasi est.</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati, asperiores tempore consectetur, accusantium incidunt possimus a, commodi libero aliquid expedita animi ratione architecto itaque repellendus. Aperiam laboriosam dolore eius.</div>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam at praesentium illum odit soluta provident! Fugit, quae minus doloribus quos sint rerum quibusdam in, dignissimos fuga vero ipsa voluptatem cupiditate.</div>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam at praesentium illum odit soluta provident! Fugit, quae minus doloribus quos sint rerum quibusdam in, dignissimos fuga vero ipsa voluptatem cupiditate.</div>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam at praesentium illum odit soluta provident! Fugit, quae minus doloribus quos sint rerum quibusdam in, dignissimos fuga vero ipsa voluptatem cupiditate.</div>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam at praesentium illum odit soluta provident! Fugit, quae minus doloribus quos sint rerum quibusdam in, dignissimos fuga vero ipsa voluptatem cupiditate.</div>
+    </main>
+</body>
+</html>

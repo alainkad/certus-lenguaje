@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+        <form action="" method="post">
+            <label for="">
+                Nombre <input type="text">
+            </label>   
+            <p><input type="text"     placeholder="Nombre"              name="Nombre"></p> 
+            <p><input type="text"     placeholder="Apellidos"           name="Apellidos"></p> 
+            <p><input type="email"    placeholder="Correo Electronico"  name="Correo"></p>
+            <p><input type="date"     placeholder="Fecha de nacimiento" name="Fecha_de_nacimiento"></p>
+            <p><input type="number"   placeholder="DNI"                 name="DNI"></p> 
+            <p><input type="tel"      placeholder="Telefono"            name="Telefono"></p>
+            <p><input type="password" placeholder="Contraseña"          name="Contrasena"></p>
+            <p>Genero</p>
+            <p>
+                <label for="">
+                    Masculino<input type="radio" name="Genero">
+                    Femenino <input type="radio" name="Genero">
+                    Otro     <input type="radio" name="Genero">
+                </label>
+            </p>
+            <p>Pais de nacimiento</p>
+            <select name="Pais" id="">
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="peru">     Peru      </option>
+                <option value="colombia"> Colombia  </option>
+                <option value="bolivia">  Bolivia   </option>
+                <option value="ecuador">  Ecuador   </option>
+            </select>  
+            <p>Cursos</p>
+            <p>Javascrip <input  type="checkbox" name="curso_1"></p>
+            <p>HTML 5    <input  type="checkbox" name="curso_2"></p>
+            <p>CSS 3     <input  type="checkbox" name="curso_3"></p>
+            <P>Tailwind  <input  type="checkbox" name="curso_4"></P>
+            <p>Node Js   <input  type="checkbox" name="curso_5"></p>
+            <button type="submit">Enviar</button>
+        </form>     
+    </section>
+</body> 
+</html>
